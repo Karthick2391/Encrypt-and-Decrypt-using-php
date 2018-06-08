@@ -10,8 +10,8 @@
  */
 function encrypt_decrypt( $string, $action = 'e' ) {
     // you may change these values to your own
-    $secret_key = 'tcs@2018@isthehiddenkey#$%';
-    $secret_iv = '23032018';
+    $secret_key = 'karthick@2018@isthehiddenkey#$%';
+    $secret_iv = '08062018';
 
     $output = false;
     $encrypt_method = "AES-256-CBC";
@@ -28,7 +28,7 @@ function encrypt_decrypt( $string, $action = 'e' ) {
     return $output;
 }
 
-$plain_txt = "123Hello@#$%World!";
+$plain_txt = "Smile Please!";
 
 $encrypted_txt = encrypt_decrypt( $plain_txt, 'e' );
 
@@ -41,8 +41,12 @@ $decrypted_txt = encrypt_decrypt( $encrypted_txt, 'd' );
 echo "Decrypted Text =" .$decrypted_txt. "\n";
 
  echo '<br>';
-if ( $plain_txt === $decrypted_txt ) echo "SUCCESS";
-else echo "FAILED";
-echo "\n";
+
+if ( $plain_txt === $decrypted_txt ) 
+    echo "SUCCESS";
+else 
+    echo "FAILED";
+
+ echo '<br>';
 
 ?>
