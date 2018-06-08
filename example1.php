@@ -1,6 +1,18 @@
 <?php
-define("ENCRYPTION_KEY", "tcs@2018@isthehiddenkey#$%");
-$string = "Encrypt_Decrypt_Example!";
+
+/**
+ * Encrypt and decrypt
+ * 
+ * @author Karthick <karthi.karthi47@gmail.com>
+ * @link Coming Soon
+ *
+ * @param string $string string to be encrypted/decrypted
+ * @param string ENCRYPTION_KEY what to do with this? SECRET KEY for Encypt and Decrypt
+ */
+
+
+define("ENCRYPTION_KEY", "karthick@2018@isthehiddenkey#$%");
+$string = "Smile Please!";
 
 echo $encrypted = encrypt($string, ENCRYPTION_KEY);
 echo "<br />";
